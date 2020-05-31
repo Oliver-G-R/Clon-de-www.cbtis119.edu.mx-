@@ -1,0 +1,20 @@
+.sidebar-facebook {
+    background-color: #405D9A;
+    width: 40px;
+    height: 240px;
+    position: fixed;
+    cursor: pointer;
+
+    &__span {
+        display: block;
+        padding: 1rem;
+        color: #ffffff;
+        font-size: 1.7rem;
+        font-weight: bold;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}

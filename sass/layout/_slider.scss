@@ -1,0 +1,10 @@
+.slider-container{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    border: .2rem solid rgb(231, 231, 231);
+    &__img{
+        max-width: 100%;
+    }
+}
