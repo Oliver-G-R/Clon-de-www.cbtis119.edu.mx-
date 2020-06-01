@@ -1,0 +1,43 @@
+//Educative offert
+
+.main-edu-offert{
+    &__container-content{
+        max-width: 95%;
+        margin: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 2.5rem;
+        margin-bottom: 7rem;
+    }
+
+    &__sub-title{
+        color: #0066DF;
+        margin: 0;
+    }
+
+    &__text-info{
+        margin: 1rem 0;
+    }
+
+    &__box{
+        max-width: 30%;
+        margin-bottom: 2rem;
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__link-to-info{
+        &:hover{
+            color: red;
+            text-decoration: none;
+        }
+    }
+
+}

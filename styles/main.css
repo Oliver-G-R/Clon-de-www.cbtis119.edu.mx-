@@ -10,6 +10,7 @@ body {
   color: #222;
   font-family: "Open Sans", Verdana, Geneva, "DejaVu Sans", sans-serif;
   background-color: #303030;
+  padding-bottom: 5rem;
 }
 
 .container-page {
@@ -18,6 +19,15 @@ body {
   margin: auto;
   margin-top: 2.5rem;
   height: 100%;
+}
+
+.universal-container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.spacing-sections {
+  margin-top: 3rem;
 }
 
 .header-nav {
@@ -98,7 +108,7 @@ body {
   background-color: #EFEFEF;
   padding: 1rem 2rem 1rem 2rem;
   border-bottom: 0.1rem solid #D6D6D6;
-  width: 24.5rem;
+  width: 20.5rem;
   position: relative;
   top: 1rem;
   left: -4rem;
@@ -121,9 +131,11 @@ body {
 
 .sidebar-facebook {
   background-color: #405D9A;
-  width: 40px;
-  height: 240px;
+  width: 4rem;
+  height: 24rem;
   position: fixed;
+  top: 30%;
+  z-index: 999999;
   cursor: pointer;
 }
 .sidebar-facebook__span {
@@ -140,14 +152,85 @@ body {
 }
 
 .slider-container {
-  max-width: 80%;
+  max-width: 75%;
   margin: auto;
   margin-top: 4rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border: 0.2rem solid #e7e7e7;
 }
 .slider-container__img {
   max-width: 100%;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+}
+.section-about__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+}
+.section-about__content {
+  display: flex;
+  justify-content: space-between;
+}
+.section-about__img {
+  max-width: 30%;
+}
+.section-about__content-internal-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-about__internal-links:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.more-info {
+  border-top: 0.6rem solid #D3D3D3;
+  border-bottom: 0.6rem solid #D3D3D3;
+}
+.more-info__content-box {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rem;
+}
+.more-info__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-edu-offert__container-content {
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-edu-offert__title {
+  font-size: 2.5rem;
+  margin-bottom: 7rem;
+}
+.main-edu-offert__sub-title {
+  color: #0066DF;
+  margin: 0;
+}
+.main-edu-offert__text-info {
+  margin: 1rem 0;
+}
+.main-edu-offert__box {
+  max-width: 30%;
+  margin-bottom: 2rem;
+}
+.main-edu-offert__img {
+  width: 100%;
+}
+.main-edu-offert__link-to-info:hover {
+  color: red;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

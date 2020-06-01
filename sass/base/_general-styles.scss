@@ -10,4 +10,24 @@ body {
     color: #222;
     font-family: "Open Sans", Verdana, Geneva, "DejaVu Sans", sans-serif;
     background-color: #303030;
+    padding-bottom: 5rem;
+}
+
+.container-page {
+    background-color: #ffffff;
+    max-width: 81%;
+    margin: auto;
+    margin-top: 2.5rem;
+
+    height: 100%;
+}
+
+
+.universal-container{
+    max-width: 90%;
+    margin: auto;
+}
+
+.spacing-sections{
+    margin-top: 3rem;
 }

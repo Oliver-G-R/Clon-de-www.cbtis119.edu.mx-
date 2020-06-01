@@ -1,0 +1,56 @@
+//section about
+.section-about {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 4.5rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        max-width: 30%;
+    }
+
+    &__content-internal-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__internal-links {
+        &:hover {
+            color: red;
+            text-decoration: none;
+        }
+    }
+}
+
+//More info
+.more-info {
+    border-top: .6rem solid #D3D3D3;
+    border-bottom: .6rem solid #D3D3D3;
+
+    &__content-box {
+        display: flex;
+        justify-content: space-between;
+      
+        margin-left: 10rem;
+    }
+
+    
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+}
