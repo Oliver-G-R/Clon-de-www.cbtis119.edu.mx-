@@ -93,6 +93,14 @@
     .arrow-right {
         //arrow 
         margin-left: 3rem;
+
+        &.sports {
+            margin-left: 12.5rem;
+        }
+
+        &.culture {
+            margin-left: 12.5rem;
+        }
     }
 
     &--2 {
@@ -100,10 +108,17 @@
         left: 24.5rem;
         bottom: 11.5rem;
     }
-    &--3{
+
+    &--3 {
         //submenu 3
         left: 24.5rem;
         bottom: 0;
+    }
+
+    &--4 {
+        //submenu 4
+        left: 24.5rem;
+        bottom: -7rem;
     }
 }
 
@@ -112,3 +127,90 @@
         display: block;
     }
 }
+
+@media(max-width:782px) {
+    .header-nav {
+        max-width: 100%;
+        background-color: #3A3A3A;
+        padding: 1rem;
+        
+        &__logo {
+            display: none;
+        }
+
+        &__nav {
+            margin-top: 0;
+            display: none;
+        }
+
+    }
+
+    //nav
+    .list-nav {
+        display: none;
+    }
+
+    //content menu/form-search
+    .content-box-menu{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .form-search {
+        display: block;
+
+        &__input-box {
+            display: flex;
+            align-items: center;
+            background-color: #D0D0D0;
+            padding: .5rem;
+            border-radius: .3rem;
+            -webkit-border-radius: .3rem;
+            -moz-border-radius: .3rem;
+            -ms-border-radius: .3rem;
+            -o-border-radius: .3rem;
+             
+           
+        }
+
+        &__icon-search {
+            font-size: 1.6rem;
+            margin-right: .5rem;
+
+        }
+
+        &__input {
+            background-color: transparent;
+            outline: none;
+            width: 100%;
+            border: 0;
+            &:focus {
+                width: 41rem;
+                
+            }
+        }
+
+        
+    }
+
+    .button-menu{
+       
+        background-color: transparent;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        &__icon-button{
+            font-size: 1.7rem;
+            margin-right: .6em;
+        }
+        &__text-button{
+            font-size: 1.4rem;
+        }
+    }
+
+
+}
+

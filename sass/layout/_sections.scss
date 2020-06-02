@@ -61,10 +61,11 @@
 
     &__title-box {
         margin: 0 0 2.5rem 0;
+
         &--view-counter {
             font-size: 2.6rem;
             font-weight: normal;
-            
+
         }
     }
 
@@ -93,4 +94,53 @@
 
 
 
+}
+
+@media(max-width:1048px) {
+    .more-info {
+        &__content-box {
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width:768px) {
+
+    //section about
+    .section-about {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__content-internal-links {
+            margin-bottom: 2.5rem;
+        }
+
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .more-info {
+        &__content-box {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        &__box {
+            width: 80%;
+            border-bottom: .6rem solid #D3D3D3;
+
+            &:last-child {
+                border: 0;
+            }
+
+        }
+
+        &__list {
+            padding: 0;
+        }
+    }
 }

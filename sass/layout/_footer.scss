@@ -54,3 +54,17 @@
     }
 
 }
+
+@media(max-width:768px){
+    .site-footer{
+        &__title{
+            font-size: 2.3rem;
+        }
+        &__social-media-icon{
+            font-size: 3rem;
+        }
+        &__span{
+            font-size: 1.5rem;
+        }
+    }
+}

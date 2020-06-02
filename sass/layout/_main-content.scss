@@ -41,3 +41,13 @@
     }
 
 }
+
+@media(max-width:768px){
+    .main-edu-offert{
+        &__box{
+            max-width: 65%;
+            margin: auto;
+            margin-bottom: 4rem;
+        }
+    }
+}

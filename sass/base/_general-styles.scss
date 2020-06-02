@@ -13,6 +13,14 @@ body {
     padding-bottom: 5rem;
 }
 
+.form-search{
+    display: none;
+}
+#menu-check{
+    display: none;
+}
+
+
 .container-page {
     background-color: #ffffff;
     max-width: 81%;
@@ -30,4 +38,17 @@ body {
 
 .spacing-sections{
     margin-top: 3rem;
+}
+
+@media(max-width:1047px){
+    body{
+        padding: 0;
+        margin: 0;
+
+    }
+    .container-page{
+        margin-top: 0;
+      
+        max-width: 100%;
+    }
 }
