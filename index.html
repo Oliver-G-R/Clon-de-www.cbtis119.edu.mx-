@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Foonts
+     -->
 
+    <script src="https://kit.fontawesome.com/0bffe06e0b.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 
@@ -239,6 +243,45 @@
                             CLUBES
                         </a>
                         <i class="list-nav__icon-arrow list-nav__icon-arrow--down"></i>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__items">
+                                <a class="sub-menu__link" href="#">Deportivos</a>
+              
+                                <ul class="sub-menu sub-menu--3">
+                                    <li class="sub-menu__items">
+                                        <a class="sub-menu__link" href="#">Basquetbol</a>
+                                    </li>
+                                    <li class="sub-menu__items">
+                                        <a class="sub-menu__link" href="#">Volibol</a>
+                                    </li>
+                                    <li class="sub-menu__items">
+                                        <a class="sub-menu__link" href="#">Fútbol</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="sub-menu__items">
+                                <a class="sub-menu__link" href="#">Culturales</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-460"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460">
+                                        <a href="http://www.cbtis119.edu.mx/ajedrez/">Ajedrez</a></li>
+                                    <li id="menu-item-459"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459">
+                                        <a href="http://www.cbtis119.edu.mx/canto/">Canto</a></li>
+                                    <li id="menu-item-458"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
+                                        <a href="http://www.cbtis119.edu.mx/oratoria/">Oratoria</a></li>
+                                    <li id="menu-item-457"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457">
+                                        <a href="http://www.cbtis119.edu.mx/rondalla/">Rondalla</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__items" >
+                                <a class="sub-menu__link" href="#">Académicos</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="list-nav__items">
                         <a href="" class="list-nav__links">
@@ -260,7 +303,6 @@
         <div class="slider-container">
             <img class="slider-container__img" src="img/Slider-Guías.jpg" alt="">
         </div>
-
 
 
         <!-- <div style="margin-top: 8rem; position: absolute;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -292,7 +334,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div> -->
-
 
         <section class="section-about universal-container spacing-sections">
             <h2 class="section-about__title">
@@ -455,88 +496,126 @@
         <section class="more-info spacing-sections universal-container">
             <div class="more-info__content-box">
                 <div class="more-info__box">
-                    <h4>
+                    <h4 class="more-info__title-box">
                         Instalaciones
                     </h4>
-                    <a href="">
-                        Aulas
-                    </a>
-                    <a href="">
-                        Auditorio
-                    </a>
-                    <a href="">
-                        Cafetería
-                    </a>
-                    <a href="">
-                        Biblioteca
-                    </a>
-    
+                    <ul class="more-info__list">
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Aulas
+                            </a>
+                        </li>
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Auditorio
+                            </a>
+                        </li>
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Cafetería
+                            </a>
+                        </li>
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Biblioteca
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
-    
+
                 <div class="more-info__box">
-                    <h4>
+                    <h4 class="more-info__title-box">
 
                         Comunidad estudiantil
                     </h4>
-                    <a href="">
-                        Académica
-                    </a>
-                    <a href="">
-                        Cívicas
-                    </a>
-                    <a href="">
-                        Culturales
-                    </a>
-                    <a href="">
-                        Deportivas
-                    </a>
+                    <ul class="more-info__list">
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Académica
+                            </a>
+                        </li>
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Cívicas
+                            </a>
+                        </li>
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Culturales
+                            </a>
+                        </li>
+                        <li class="more-info__items">
+                            <a class="more-info__links" href="">
+                                Deportivas
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-    
+
                 <div class="more-info__box">
-                    <h4>
+                    <h4 class="more-info__title-box more-info__title-box--view-counter">
                         Contador de vistas
                     </h4>
-                    <ul>
-                        <li>
+                    <ul class="more-info__list more-info__list--show-list">
+                        <li class="more-info__items">
                             Total de vistas:
                             <span>
                                 109329
                             </span>
                         </li>
-    
-                        <li>
+
+                        <li class="more-info__items">
                             Hoy:
                             <span>
                                 69
                             </span>
                         </li>
-    
-                        <li>
+
+                        <li class="more-info__items">
                             Visitantes por mes:
                             <span>
                                 69
                             </span>
                         </li>
-    
-                        <li>
+
+                        <li class="more-info__items">
                             Visitantes conectados:
                             <span>
                                 2
                             </span>
                         </li>
-    
-                        <li>
+
+                        <li class="more-info__items">
                             el contador comenzó el:
                             <span>
                                 15 de diciembre, 2016
                             </span>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
             </div>
         </section>
+
+        <footer class="site-footer universal-container spacing-sections">
+            <h4 class="site-footer__title">
+                Siguenos en:
+            </h4>
+
+
+            <a class="site-footer__social-media" href="#">
+                <i class="site-footer__social-media-icon fab fa-facebook-square"></i>
+            </a>
+
+            <span class="site-footer__span">
+                • Usando
+                <a class="site-footer__link" href="#">Tiny Framework</a> •
+                <a class="site-footer__button" href="" role="button">Acceder</a>
+            </span>
+
+        </footer>
 
 
 
