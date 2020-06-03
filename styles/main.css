@@ -13,11 +13,7 @@ body {
   padding-bottom: 5rem;
 }
 
-.form-search {
-  display: none;
-}
-
-#menu-check {
+.form-search, .button-menu, #menu-check {
   display: none;
 }
 
@@ -80,6 +76,7 @@ body {
 .list-nav__links {
   text-decoration: none;
   color: #6a6a6a;
+  text-transform: uppercase;
 }
 .list-nav__links:hover {
   text-decoration: underline;
@@ -167,16 +164,16 @@ body {
     max-width: 100%;
     background-color: #3A3A3A;
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   .header-nav__logo {
     display: none;
   }
   .header-nav__nav {
     margin-top: 0;
-    display: none;
-  }
-
-  .list-nav {
     display: none;
   }
 
@@ -220,6 +217,7 @@ body {
     align-items: center;
     border: none;
     outline: none;
+    cursor: pointer;
   }
   .button-menu__icon-button {
     font-size: 1.7rem;
@@ -227,6 +225,43 @@ body {
   }
   .button-menu__text-button {
     font-size: 1.4rem;
+  }
+
+  #menu-check:checked ~ .header-nav__nav {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 4rem;
+    right: 0;
+    background-color: #3A3A3A;
+  }
+  #menu-check:checked ~ .header-nav__nav .list-nav__items {
+    margin-left: 6rem;
+  }
+  #menu-check:checked ~ .header-nav__nav ul {
+    flex-direction: column;
+    margin: 0;
+  }
+  #menu-check:checked ~ .header-nav__nav li .list-nav__links {
+    color: #ffff;
+    font-size: 1.7rem;
+  }
+  #menu-check:checked ~ .header-nav__nav li .list-nav__links--inicio {
+    display: block;
+    padding: 1rem 3.5rem;
+    background-color: #117BB8;
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  #menu-check:checked ~ .header-nav__nav li .list-nav__links--capitalize {
+    text-transform: capitalize;
+  }
+  #menu-check:checked ~ .header-nav__nav li:first-child {
+    margin: 0;
   }
 }
 .sidebar-facebook {
@@ -268,6 +303,10 @@ body {
 }
 
 @media (max-width: 782px) {
+  body {
+    background-color: #ffffff;
+  }
+
   .slider-container {
     margin-top: 7.8rem;
   }

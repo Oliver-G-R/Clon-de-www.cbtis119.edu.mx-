@@ -9,16 +9,15 @@ body {
     line-height: 1.8;
     color: #222;
     font-family: "Open Sans", Verdana, Geneva, "DejaVu Sans", sans-serif;
+
     background-color: #303030;
     padding-bottom: 5rem;
 }
 
-.form-search{
+.form-search , .button-menu , #menu-check{
     display: none;
 }
-#menu-check{
-    display: none;
-}
+
 
 
 .container-page {

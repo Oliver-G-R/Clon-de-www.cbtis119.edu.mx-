@@ -19,6 +19,7 @@
     &__links {
         text-decoration: none;
         color: #6a6a6a;
+        text-transform: uppercase;
 
         &:hover {
             text-decoration: underline;
@@ -133,11 +134,18 @@
         max-width: 100%;
         background-color: #3A3A3A;
         padding: 1rem;
-        
+        //position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+
         &__logo {
             display: none;
         }
 
+        //nav-list
         &__nav {
             margin-top: 0;
             display: none;
@@ -145,16 +153,14 @@
 
     }
 
-    //nav
-    .list-nav {
-        display: none;
-    }
+
+
 
     //content menu/form-search
-    .content-box-menu{
+    .content-box-menu {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     .form-search {
@@ -170,8 +176,8 @@
             -moz-border-radius: .3rem;
             -ms-border-radius: .3rem;
             -o-border-radius: .3rem;
-             
-           
+
+
         }
 
         &__icon-search {
@@ -180,37 +186,96 @@
 
         }
 
-        &__input {
+        &__input { //Problema de proporcion en responsiv
             background-color: transparent;
             outline: none;
             width: 100%;
             border: 0;
+
             &:focus {
                 width: 41rem;
-                
+
             }
         }
 
-        
+
     }
 
-    .button-menu{
-       
+    .button-menu {
+
         background-color: transparent;
         color: #ffff;
         display: flex;
         align-items: center;
         border: none;
         outline: none;
-        &__icon-button{
+        cursor: pointer;
+
+        &__icon-button {
             font-size: 1.7rem;
             margin-right: .6em;
         }
-        &__text-button{
+
+        &__text-button {
             font-size: 1.4rem;
         }
     }
 
 
-}
+    //nav-list
+    #menu-check:checked {
+        &~.header-nav__nav {
+            display: block;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            top: 4rem;
+            right: 0;
 
+            background-color: #3A3A3A;
+
+            .list-nav__items {
+                margin-left: 6rem;
+            }
+
+            ul {
+                flex-direction: column;
+                margin: 0;
+                //  overflow: auto;
+
+            }
+
+            li {
+                .list-nav__links {
+                    color: #ffff;
+                    font-size: 1.7rem;
+
+
+                    &--inicio {
+                        display: block;
+                        padding: 1rem 3.5rem;
+                        background-color: #117BB8;
+                        width: 100%;
+                        font-size: 1.8rem;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: normal;
+                        text-transform: capitalize;
+
+                    }
+
+                    &--capitalize {
+                        text-transform: capitalize;
+                    }
+
+                }
+
+                &:first-child {
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+
+
+}
