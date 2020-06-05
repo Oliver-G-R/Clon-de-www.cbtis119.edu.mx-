@@ -324,6 +324,8 @@ body {
   margin-top: 4rem;
   padding: 0.5rem 1rem;
   border: 0.2rem solid #e7e7e7;
+  display: flex;
+  justify-content: center;
 }
 .slider-container__img {
   max-width: 100%;

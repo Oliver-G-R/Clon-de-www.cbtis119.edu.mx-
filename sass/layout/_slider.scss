@@ -4,7 +4,9 @@
     margin-top: 4rem;
     padding: .5rem 1rem;
     border: .2rem solid rgb(231, 231, 231);
+    display: flex;
     
+    justify-content: center;
     &__img{
         max-width: 100%;
     }
